@@ -4,8 +4,8 @@ import { GoogleLogin } from 'react-google-login';
 
 const login = (props) => {
     const responseGoogle = (response) => {
-        console.log('full resp', response);
-        console.log('profile resp', response.profileObj);
+        // console.log('full resp', response);
+        // console.log('profile resp', response.profileObj);
         const user = response.profileObj;
         if (user){
             props.setUser(user)
