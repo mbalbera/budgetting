@@ -15,7 +15,7 @@ const login = (props) => {
     return(
         <GoogleLogin
             clientId="604349755662-rrc8f292d604d07igf2e20u54mjpug8i.apps.googleusercontent.com"
-            buttonText="Login"
+            buttonText="Sign in With Google"
             onSuccess={responseGoogle}
             onFailure={responseGoogle}
             cookiePolicy={'single_host_origin'}

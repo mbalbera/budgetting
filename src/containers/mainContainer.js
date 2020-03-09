@@ -19,8 +19,8 @@ class Main extends React.Component {
         console.log('user',this.state.user)
         return (
             <div className="App">
-                <div>
-                    {this.state.user ? <div> <GoogleLogout /> </div> : <div><GoogleLogin setUser={this.setUser} /></div>}
+                <div style={{padding:'2%'}}>
+                    {this.state.user ? <div> <GoogleLogout setUser={this.setUser}/> </div> : <div><GoogleLogin setUser={this.setUser} /></div>}
                     {this.state.user ? <LoggedIn user={this.state.user}/> : null}
                 </div>
             </div>
