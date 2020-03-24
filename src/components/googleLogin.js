@@ -2,7 +2,7 @@ import React from 'react';
 import { GoogleLogin } from 'react-google-login';
 
 
-const login = (props) => {
+const Login = (props) => {
     const responseGoogle = (response) => {
         // console.log('full resp', response);
         // console.log('profile resp', response.profileObj);
@@ -14,7 +14,7 @@ const login = (props) => {
 
     return(
         <GoogleLogin
-            clientId="604349755662-rrc8f292d604d07igf2e20u54mjpug8i.apps.googleusercontent.com"
+            clientId="xxxxxxxxx.apps.googleusercontent.com"
             buttonText="Sign in With Google"
             onSuccess={responseGoogle}
             onFailure={responseGoogle}
@@ -22,5 +22,5 @@ const login = (props) => {
         />
     );
 }
-export default login
+export default Login
 
